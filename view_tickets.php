@@ -24,7 +24,7 @@ if ($assignFilter !== 'all' && !ctype_digit($assignFilter)) {
     $assignFilter = 'all';
 }
 
-// Build query with parameterised conditions
+
 $sql = "SELECT t.ticket_id, t.subject, t.priority, t.status, t.created_at,
                c.name AS category,
                CONCAT(s.first_name, ' ', s.last_name) AS staff_name,
